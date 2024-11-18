@@ -1,0 +1,8 @@
+####################################
+# Transitive dependencies.
+####################################
+set(_sbndqm_PACKAGE_PREFIX_DIR "${PACKAGE_PREFIX_DIR}")
+find_dependency(artdaq_core REQUIRED)
+find_dependency(sbndaq_online REQUIRED)
+set(PACKAGE_PREFIX_DIR "${_sbndqm_PACKAGE_PREFIX_DIR}")
+unset(_sbndqm_PACKAGE_PREFIX_DIR)

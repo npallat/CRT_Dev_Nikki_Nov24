@@ -1,0 +1,14 @@
+<lcgdict>
+  <class name="tpcAnalysis::ChannelData"/>
+  <class name="std::vector<tpcAnalysis::ChannelData>"/>
+  <class name="art::Wrapper<tpcAnalysis::ChannelData>"/>
+  <class name="art::Wrapper<std::vector<tpcAnalysis::ChannelData>>"/>
+
+  <class name="tpcAnalysis::ReducedChannelData"/>
+  <class name="std::vector<tpcAnalysis::ReducedChannelData>"/>
+  <class name="art::Wrapper<tpcAnalysis::ReducedChannelData>"/>
+  <class name="art::Wrapper<std::vector<tpcAnalysis::ReducedChannelData>>"/>
+
+  <class name="std::vector<std::vector<short>>"/>
+  <class name="art::Wrapper<std::vector<std::vector<short>>>"/>
+</lcgdict>

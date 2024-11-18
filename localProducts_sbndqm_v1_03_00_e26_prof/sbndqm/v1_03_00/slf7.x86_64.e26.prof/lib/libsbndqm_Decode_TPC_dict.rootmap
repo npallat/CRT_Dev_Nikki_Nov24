@@ -1,0 +1,15 @@
+{ decls }
+namespace std {  }
+namespace art {  }
+namespace tpcAnalysis { class HeaderData; }
+namespace art { template <typename T> class Wrapper; }
+namespace tpcAnalysis {  }
+
+[ libsbndqm_Decode_TPC_dict.so ]
+# List of selected classes
+class art::Wrapper<std::vector<tpcAnalysis::HeaderData> >
+class art::Wrapper<tpcAnalysis::HeaderData>
+class art::Wrapper<vector<tpcAnalysis::HeaderData> >
+class tpcAnalysis::HeaderData
+class vector<tpcAnalysis::HeaderData>
+header sbndqm/Decode/TPC/HeaderData.hh

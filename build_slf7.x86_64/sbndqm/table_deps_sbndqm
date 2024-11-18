@@ -1,0 +1,5 @@
+setupRequired(fftw v3_3_10)
+setupRequired(fhiclpy v4_03_05 -q +e26:+prof)
+setupRequired(sbncode v09_91_02_01 -q +e26:+prof)
+setupRequired(sbndaq_artdaq_core v1_09_00of1 -q +e26:+s131:+prof)
+setupRequired(sbndaq_online v1_01_00 -q +e26:+prof)

@@ -1,0 +1,3 @@
+    # Include installation locations in fhicl file path
+    pathPrepend(FHICL_FILE_PATH, ${MRB_SOURCE}/sbndqm/installations/sbn-nd)
+    pathPrepend(FHICL_FILE_PATH, ${MRB_SOURCE}/sbndqm/installations/sbn-fd)

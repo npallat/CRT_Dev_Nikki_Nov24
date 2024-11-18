@@ -1,0 +1,7 @@
+# DO NOT DELETE 
+# sbndaq_online
+mrb_add_subdirectory(sbndaq_online)
+mrb_process_checkpoints()
+# sbndqm
+mrb_add_subdirectory(sbndqm)
+mrb_process_checkpoints()

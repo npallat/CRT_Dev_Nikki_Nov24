@@ -1,0 +1,15 @@
+{ decls }
+namespace std {  }
+namespace art {  }
+namespace sbndqm { class DQMTPCDecodeAna; }
+namespace art { template <typename T> class Wrapper; }
+namespace sbndqm {  }
+
+[ libsbndqm_Decode_TPC_SBND_dict.so ]
+# List of selected classes
+class art::Wrapper<sbndqm::DQMTPCDecodeAna>
+class art::Wrapper<std::vector<sbndqm::DQMTPCDecodeAna> >
+class art::Wrapper<vector<sbndqm::DQMTPCDecodeAna> >
+class sbndqm::DQMTPCDecodeAna
+class vector<sbndqm::DQMTPCDecodeAna>
+header sbndqm/Decode/TPC/SBND/DQMTPCDecodeAna.h

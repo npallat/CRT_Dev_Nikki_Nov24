@@ -1,0 +1,69 @@
+####################################
+# Package variable definitions.
+####################################
+# sbndqm_NAMESPACE
+set(sbndqm_NAMESPACE "sbndqm")
+# sbndqm_INCLUDE_DIR
+if (EXISTS "@PACKAGE_INCLUDE_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_INCLUDE_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_INCLUDE_DIR "@PACKAGE_INCLUDE_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+# sbndqm_LIBRARY_DIR
+if (EXISTS "@PACKAGE_LIBRARY_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_LIBRARY_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_LIBRARY_DIR "@PACKAGE_LIBRARY_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+# sbndqm_BIN_DIR
+if (EXISTS "@PACKAGE_BIN_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_BIN_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_BIN_DIR "@PACKAGE_BIN_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+# sbndqm_FHICL_DIR
+if (EXISTS "@PACKAGE_FHICL_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_FHICL_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_FHICL_DIR "@PACKAGE_FHICL_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+# sbndqm_INSTALLED_SOURCE_DIR
+if (EXISTS "@PACKAGE_INSTALLED_SOURCE_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_INSTALLED_SOURCE_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_INSTALLED_SOURCE_DIR "@PACKAGE_INSTALLED_SOURCE_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+# sbndqm_FW_DIR
+if (EXISTS "@PACKAGE_FW_DIR@")
+  file(GLOB _sbndqm_TMP_DIR_ENTRIES "@PACKAGE_FW_DIR@/*")
+  if (_sbndqm_TMP_DIR_ENTRIES)
+    set_and_check(sbndqm_FW_DIR "@PACKAGE_FW_DIR@")
+  endif()
+  unset(_sbndqm_TMP_DIR_ENTRIES)
+endif()
+
+####################################
+# Package include directories.
+####################################
+if (IS_DIRECTORY "@PACKAGE_INCLUDE_DIR@")
+  # CMake convention:
+  set(sbndqm_INCLUDE_DIRS "@PACKAGE_INCLUDE_DIR@")
+endif()
+
+####################################
+# Package library directories.
+####################################
+if (IS_DIRECTORY "@PACKAGE_LIBRARY_DIR@")
+  # CMake convention:
+  set(sbndqm_LIBRARY_DIRS "@PACKAGE_LIBRARY_DIR@")
+endif()

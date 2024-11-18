@@ -1,0 +1,25 @@
+{ decls }
+namespace std {  }
+namespace art {  }
+namespace tpcAnalysis { class ChannelData; }
+namespace art { template <typename T> class Wrapper; }
+namespace tpcAnalysis { class ReducedChannelData; }
+namespace tpcAnalysis {  }
+
+[ libsbndqm_dqmAnalysis_TPC_dict.so ]
+# List of selected classes
+class art::Wrapper<std::vector<std::vector<short> > >
+class art::Wrapper<std::vector<tpcAnalysis::ChannelData> >
+class art::Wrapper<std::vector<tpcAnalysis::ReducedChannelData> >
+class art::Wrapper<tpcAnalysis::ChannelData>
+class art::Wrapper<tpcAnalysis::ReducedChannelData>
+class art::Wrapper<vector<tpcAnalysis::ChannelData> >
+class art::Wrapper<vector<tpcAnalysis::ReducedChannelData> >
+class art::Wrapper<vector<vector<short> > >
+class tpcAnalysis::ChannelData
+class tpcAnalysis::ReducedChannelData
+class vector<std::vector<short> >
+class vector<tpcAnalysis::ChannelData>
+class vector<tpcAnalysis::ReducedChannelData>
+class vector<vector<short> >
+header sbndqm/dqmAnalysis/TPC/ChannelData.hh

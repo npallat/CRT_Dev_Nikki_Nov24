@@ -1,0 +1,13 @@
+FILE = version
+PRODUCT = sbndaq_online
+VERSION = v1_01_00
+
+FLAVOR = Linux64bit+3.10-2.17
+QUALIFIERS = e26:prof
+  DECLARER = cetmodules 3.24.01
+  DECLARED = Mon Nov 18 14:22:25 CST 2024
+  MODIFIER = cetmodules 3.24.01
+  MODIFIED = Mon Nov 18 14:22:25 CST 2024
+  PROD_DIR = sbndaq_online/v1_01_00
+  UPS_DIR = slf7.x86_64.e26.prof/ups
+  TABLE_FILE = sbndaq_online.table

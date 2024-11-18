@@ -1,0 +1,42 @@
+####################################
+# Exported targets, and package components.
+####################################
+
+##################
+# Automatically-generated runtime targets: sbndqm
+##################
+include("${CMAKE_CURRENT_LIST_DIR}/sbndqmTargets.cmake")
+foreach (component IN LISTS sbndqm_FIND_COMPONENTS)
+  include("${CMAKE_CURRENT_LIST_DIR}/sbndqmTargets_${component}.cmake")
+endforeach()
+
+##################
+# Manually-generated non-runtime targets.
+##################
+set(_targetsDefined)
+set(_targetsNotDefined)
+set(_expectedTargets)
+foreach (_expectedTarget IN ITEMS
+    sbndqm::startOM.sh)
+  list(APPEND _expectedTargets ${_expectedTarget})
+  if (NOT TARGET ${_expectedTarget})
+    list(APPEND _targetsNotDefined ${_expectedTarget})
+  endif()
+  if (TARGET ${_expectedTarget})
+    list(APPEND _targetsDefined ${_expectedTarget})
+  endif()
+endforeach()
+if ("${_targetsDefined}" STREQUAL "${_expectedTargets}")  # Nothing to do.
+elseif ("${_targetsDefined}" STREQUAL "") # Need to define targets.
+  add_executable(sbndqm::startOM.sh IMPORTED)
+  set_target_properties(sbndqm::startOM.sh
+    PROPERTIES IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/slf7.x86_64.e26.prof/bin/startOM.sh")
+else()
+  message(FATAL_ERROR "Some (but not all) targets in this export set were already defined.
+Targets Defined: ${_targetsDefined}
+Targets not yet defined: ${_targetsNotDefined}
+")
+endif()
+unset(_targetsDefined)
+unset(_targetsNotDefined)
+unset(_expectedTargets)

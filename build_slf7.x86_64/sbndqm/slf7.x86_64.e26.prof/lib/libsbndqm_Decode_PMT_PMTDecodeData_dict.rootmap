@@ -1,0 +1,15 @@
+{ decls }
+namespace std {  }
+namespace art {  }
+namespace pmtAnalysis { class PMTDigitizerInfo; }
+namespace art { template <typename T> class Wrapper; }
+namespace pmtAnalysis {  }
+
+[ libsbndqm_Decode_PMT_PMTDecodeData_dict.so ]
+# List of selected classes
+class art::Wrapper<pmtAnalysis::PMTDigitizerInfo>
+class art::Wrapper<std::vector<pmtAnalysis::PMTDigitizerInfo> >
+class art::Wrapper<vector<pmtAnalysis::PMTDigitizerInfo> >
+class pmtAnalysis::PMTDigitizerInfo
+class vector<pmtAnalysis::PMTDigitizerInfo>
+header sbndqm/Decode/PMT/PMTDecodeData/PMTDigitizerInfo.hh

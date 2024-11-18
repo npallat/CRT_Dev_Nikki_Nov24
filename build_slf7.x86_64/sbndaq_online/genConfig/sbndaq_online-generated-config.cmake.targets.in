@@ -1,0 +1,11 @@
+####################################
+# Exported targets, and package components.
+####################################
+
+##################
+# Automatically-generated runtime targets: sbndaq_online
+##################
+include("${CMAKE_CURRENT_LIST_DIR}/sbndaq_onlineTargets.cmake")
+foreach (component IN LISTS sbndaq_online_FIND_COMPONENTS)
+  include("${CMAKE_CURRENT_LIST_DIR}/sbndaq_onlineTargets_${component}.cmake")
+endforeach()

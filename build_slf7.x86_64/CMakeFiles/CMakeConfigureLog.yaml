@@ -1,0 +1,1339 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.105.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/3.27.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/3.27.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a44f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8a44f.dir/build.make CMakeFiles/cmTC_8a44f.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw'
+        Building C object CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc   -v -o CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -c /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1 -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a44f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc7wtiWG.s
+        GNU C17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed
+         /usr/local/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: ce702590689113c77b9777e394cd57cb
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o /tmp/cc7wtiWG.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_8a44f
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a44f.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc  -v CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -o cmTC_8a44f 
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc
+        COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a44f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a44f.'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2Tfk7K.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8a44f /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a44f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a44f.'
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+          add: [/usr/local/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include] ==> [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed;/usr/local/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a44f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8a44f.dir/build.make CMakeFiles/cmTC_8a44f.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-T72tsw']
+        ignore line: [Building C object CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc   -v -o CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -c /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/']
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1 -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a44f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc7wtiWG.s]
+        ignore line: [GNU C17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: ce702590689113c77b9777e394cd57cb]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o /tmp/cc7wtiWG.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_8a44f]
+        ignore line: [/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a44f.dir/link.txt --verbose=1]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc  -v CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -o cmTC_8a44f ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a44f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a44f.']
+        link line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2Tfk7K.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8a44f /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2Tfk7K.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8a44f] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o] ==> obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..]
+          arg [CMakeFiles/cmTC_8a44f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o] ==> obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o]
+        collapse obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64;/lib64;/usr/lib64;/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a48bd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a48bd.dir/build.make CMakeFiles/cmTC_a48bd.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7'
+        Building CXX object CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -std=c++17   -v -o CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -c /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1plus -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ -D_GNU_SOURCE /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a48bd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -o /tmp/ccmelbeS.s
+        GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed
+         /usr/local/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e9dba2130524ec85cea982823dc61c57
+        COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmelbeS.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a48bd
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a48bd.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -v CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a48bd 
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++
+        COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a48bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a48bd.'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXF9Y9V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a48bd /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a48bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a48bd.'
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+          add: [/usr/local/include]
+          add: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include] ==> [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0/x86_64-pc-linux-gnu]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0/backward]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0/x86_64-pc-linux-gnu;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include/c++/12.1.0/backward;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed;/usr/local/include;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "sbndaq_online/CMakeLists.txt:24 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7']
+        ignore line: []
+        ignore line: [Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a48bd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a48bd.dir/build.make CMakeFiles/cmTC_a48bd.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-gyRTZ7']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -std=c++17   -v -o CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -c /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/']
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1plus -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ -D_GNU_SOURCE /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a48bd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -o /tmp/ccmelbeS.s]
+        ignore line: [GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e9dba2130524ec85cea982823dc61c57]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmelbeS.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a48bd]
+        ignore line: [/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a48bd.dir/link.txt --verbose=1]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -v CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a48bd ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a48bd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a48bd.']
+        link line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXF9Y9V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a48bd /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccXF9Y9V.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a48bd] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o] ==> obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..]
+          arg [CMakeFiles/cmTC_a48bd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o] ==> obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o]
+        collapse obj [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64;/lib64;/usr/lib64;/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/boost_thread-1.82.0/boost_thread-config.cmake:118 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:141 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:262 (boost_find_component)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artdaq_utilities/v1_09_00/slf7.x86_64.e26.s131.prof/lib/artdaq_utilities/cmake/artdaq_utilitiesConfig.cmake:129 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndaq_online/CMakeLists.txt:42 (find_package)"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa76a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa76a.dir/build.make CMakeFiles/cmTC_aa76a.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS'
+        Building C object CMakeFiles/cmTC_aa76a.dir/src.c.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aa76a.dir/src.c.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS/src.c
+        Linking C executable cmTC_aa76a
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa76a.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc CMakeFiles/cmTC_aa76a.dir/src.c.o -o cmTC_aa76a 
+        CMakeFiles/cmTC_aa76a.dir/src.c.o: In function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        src.c:(.text+0x39): undefined reference to `pthread_detach'
+        src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        src.c:(.text+0x56): undefined reference to `pthread_join'
+        src.c:(.text+0x6a): undefined reference to `pthread_atfork'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [cmTC_aa76a] Error 1
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NdxWiS'
+        gmake: *** [cmTC_aa76a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/boost_thread-1.82.0/boost_thread-config.cmake:118 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:141 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:262 (boost_find_component)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artdaq_utilities/v1_09_00/slf7.x86_64.e26.s131.prof/lib/artdaq_utilities/cmake/artdaq_utilitiesConfig.cmake:129 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndaq_online/CMakeLists.txt:42 (find_package)"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55450/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55450.dir/build.make CMakeFiles/cmTC_55450.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD'
+        Building C object CMakeFiles/cmTC_55450.dir/CheckFunctionExists.c.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_55450.dir/CheckFunctionExists.c.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD/CheckFunctionExists.c
+        Linking C executable cmTC_55450
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55450.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_55450.dir/CheckFunctionExists.c.o -o cmTC_55450  -lpthreads 
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [cmTC_55450] Error 1
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-0gmyhD'
+        gmake: *** [cmTC_55450/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/boost_thread-1.82.0/boost_thread-config.cmake:118 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:141 (find_package)"
+      - "/daq/software/products/boost/v1_82_0/Linux64bit+3.10-2.17-e26-prof/lib/cmake/Boost-1.82.0/BoostConfig.cmake:262 (boost_find_component)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artdaq_utilities/v1_09_00/slf7.x86_64.e26.s131.prof/lib/artdaq_utilities/cmake/artdaq_utilitiesConfig.cmake:129 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndaq_online/CMakeLists.txt:42 (find_package)"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/artdaq_utilities/v1_09_00/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ca68/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4ca68.dir/build.make CMakeFiles/cmTC_4ca68.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo'
+        Building C object CMakeFiles/cmTC_4ca68.dir/CheckFunctionExists.c.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_4ca68.dir/CheckFunctionExists.c.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo/CheckFunctionExists.c
+        Linking C executable cmTC_4ca68
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ca68.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_4ca68.dir/CheckFunctionExists.c.o -o cmTC_4ca68  -lpthread 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-jdSeNo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c035/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c035.dir/build.make CMakeFiles/cmTC_1c035.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o'
+        Building CXX object CMakeFiles/cmTC_1c035.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=c++17 -o CMakeFiles/cmTC_1c035.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_1c035
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c035.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_1c035.dir/CheckFunctionExists.cxx.o -o cmTC_1c035  /usr/lib64/libX11.so /usr/lib64/libXext.so 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-GGI85o'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d3304/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d3304.dir/build.make CMakeFiles/cmTC_d3304.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq'
+        Building CXX object CMakeFiles/cmTC_d3304.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=c++17 -o CMakeFiles/cmTC_d3304.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_d3304
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3304.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_d3304.dir/CheckFunctionExists.cxx.o -o cmTC_d3304 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-f8pedq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84536/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84536.dir/build.make CMakeFiles/cmTC_84536.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr'
+        Building CXX object CMakeFiles/cmTC_84536.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=connect -std=c++17 -o CMakeFiles/cmTC_84536.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_84536
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84536.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_84536.dir/CheckFunctionExists.cxx.o -o cmTC_84536 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-agFvZr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a8a4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a8a4.dir/build.make CMakeFiles/cmTC_2a8a4.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu'
+        Building CXX object CMakeFiles/cmTC_2a8a4.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=remove -std=c++17 -o CMakeFiles/cmTC_2a8a4.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_2a8a4
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a8a4.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_2a8a4.dir/CheckFunctionExists.cxx.o -o cmTC_2a8a4 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-lLjkpu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8101d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8101d.dir/build.make CMakeFiles/cmTC_8101d.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx'
+        Building CXX object CMakeFiles/cmTC_8101d.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=shmat -std=c++17 -o CMakeFiles/cmTC_8101d.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_8101d
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8101d.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_8101d.dir/CheckFunctionExists.cxx.o -o cmTC_8101d 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8cmdwx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Geant4Config.cmake:478 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/FindGeant4.cmake:16 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/artg4tk/v12_00_03/slf7.x86_64.e26.prof/lib/artg4tk/cmake/artg4tkConfig.cmake:127 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:142 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/geant4/v4_10_6_p01g/Linux64bit+3.10-2.17-e26-prof/lib64/Geant4-10.6.1/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df92b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df92b.dir/build.make CMakeFiles/cmTC_df92b.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB'
+        Building CXX object CMakeFiles/cmTC_df92b.dir/CheckFunctionExists.cxx.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=c++17 -o CMakeFiles/cmTC_df92b.dir/CheckFunctionExists.cxx.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_df92b
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df92b.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_df92b.dir/CheckFunctionExists.cxx.o -o cmTC_df92b  -lICE 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-1FcXhB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larvecutils/v09_04_01/slf7.x86_64.e26.prof/lib/larvecutils/cmake/larvecutilsConfig.cmake:120 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lardata/v09_16_05/slf7.x86_64.e26.prof/lib/lardata/cmake/lardataConfig.cmake:143 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:173 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/lardata/v09_16_05/Modules;/daq/software/products/canvas_root_io/v1_13_06/Modules;/daq/software/products/larcore/v09_11_02/Modules;/daq/software/products/nufinder/v1_02_01/Modules;/daq/software/products/nusimdata/v1_28_06/Modules;/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/art/v3_14_04/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08e28/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_08e28.dir/build.make CMakeFiles/cmTC_08e28.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd'
+        Building CXX object CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1plus -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ -D_GNU_SOURCE -D_REENTRANT /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_08e28.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -fopenmp -o /tmp/cc1CR6hO.s
+        GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"
+        ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"
+        ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed
+         /usr/local/include
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.1.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e9dba2130524ec85cea982823dc61c57
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/'
+         as -v --64 -o CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o /tmp/cc1CR6hO.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_08e28
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08e28.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -fopenmp -v CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -o cmTC_08e28  -v 
+        Using built-in specs.
+        COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++
+        COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c,c++,fortran,go,objc,obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.1.0 (GCC) 
+        COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/
+        LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/
+        Reading specs from /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_08e28' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_08e28.'
+         /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYGNgPV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_08e28 /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_08e28' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_08e28.'
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larvecutils/v09_04_01/slf7.x86_64.e26.prof/lib/larvecutils/cmake/larvecutilsConfig.cmake:120 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lardata/v09_16_05/slf7.x86_64.e26.prof/lib/lardata/cmake/lardataConfig.cmake:143 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:173 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd']
+        ignore line: []
+        ignore line: [Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08e28/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_08e28.dir/build.make CMakeFiles/cmTC_08e28.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd']
+        ignore line: [Building CXX object CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/']
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/cc1plus -quiet -v -iprefix /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/ -D_GNU_SOURCE -D_REENTRANT /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-8StAnd/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_08e28.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=c++17 -version -fopenmp -o /tmp/cc1CR6hO.s]
+        ignore line: [GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"]
+        ignore line: [ignoring duplicate directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /daq/software/products/tbb/v2021_9_0/Linux64bit+3.10-2.17-e26/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/x86_64-pc-linux-gnu]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../include/c++/12.1.0/backward]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.1.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.1.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e9dba2130524ec85cea982823dc61c57]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o /tmp/cc1CR6hO.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_08e28]
+        ignore line: [/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08e28.dir/link.txt --verbose=1]
+        ignore line: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -fopenmp -v CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -o cmTC_08e28  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/src/gcc-12.1.0/configure --enable-__cxa_atexit --enable-checking=release --enable-compressed-debug-sections=all --enable-languages=c c++ fortran go objc obj-c++ --enable-libstdcxx-time=rt --enable-plugin --enable-stage1-checking=all --enable-threads=posix --prefix=/scratch/workspace/art-build-base/v12_00_00-e26/SLF7/build/gcc/v12_1_0/Linux64bit+3.10-2.17 --with-system-zlib --enable-lto --with-zstd --enable-link-serialization=15]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/]
+        ignore line: [LIBRARY_PATH=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib/:/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_08e28' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_08e28.']
+        link line: [ /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2 -plugin /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so -plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYGNgPV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_08e28 /lib/../lib64/crt1.o /lib/../lib64/crti.o /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbegin.o -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0 -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib -L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../.. CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../libexec/gcc/x86_64-pc-linux-gnu/12.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccYGNgPV.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_08e28] ==> ignore
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+          arg [-L/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..]
+          arg [CMakeFiles/cmTC_08e28.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib64] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib] ==> [/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib]
+        collapse library dir [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/../lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../..] ==> [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc/x86_64-pc-linux-gnu/12.1.0;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib/gcc;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib64;/lib64;/usr/lib64;/daq/software/products/libwda/v2_30_0a/Linux64bit+3.10-2.17/lib;/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larvecutils/v09_04_01/slf7.x86_64.e26.prof/lib/larvecutils/cmake/larvecutilsConfig.cmake:120 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lardata/v09_16_05/slf7.x86_64.e26.prof/lib/lardata/cmake/lardataConfig.cmake:143 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsim/v09_44_01/slf7.x86_64.e26.prof/lib/larsim/cmake/larsimConfig.cmake:173 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/lareventdisplay/v09_11_09/slf7.x86_64.e26.prof/lib/lareventdisplay/cmake/lareventdisplayConfig.cmake:126 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:96 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/lardata/v09_16_05/Modules;/daq/software/products/canvas_root_io/v1_13_06/Modules;/daq/software/products/larcore/v09_11_02/Modules;/daq/software/products/nufinder/v1_02_01/Modules;/daq/software/products/nusimdata/v1_28_06/Modules;/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/art/v3_14_04/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ec8f0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ec8f0.dir/build.make CMakeFiles/cmTC_ec8f0.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ'
+        Building CXX object CMakeFiles/cmTC_ec8f0.dir/OpenMPCheckVersion.cpp.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++   -fopenmp -std=c++17 -o CMakeFiles/cmTC_ec8f0.dir/OpenMPCheckVersion.cpp.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_ec8f0
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec8f0.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++  -fopenmp CMakeFiles/cmTC_ec8f0.dir/OpenMPCheckVersion.cpp.o -o cmTC_ec8f0 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-NxJQjQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/FindGIF.cmake:93 (CHECK_STRUCT_HAS_MEMBER)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/larfinder/v09_00_01/Modules/FindTensorFlow.cmake:57 (find_package)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larrecodnn/v09_23_04/slf7.x86_64.e26.prof/lib/larrecodnn/cmake/larrecodnnConfig.cmake:148 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "/daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/daq/software/products/larsoft/v09_91_02/slf7.x86_64.e26.prof/lib/larsoft/cmake/larsoftConfig.cmake:100 (find_dependency)"
+      - "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetOverrideFindPackage.cmake:177 (_find_package)"
+      - "sbndqm/CMakeLists.txt:36 (find_package)"
+    directories:
+      source: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y"
+      binary: "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/daq/software/products/larfinder/v09_00_01/Modules;/daq/software/products/larrecodnn/v09_23_04/Modules;/daq/software/products/larreco/v09_25_04/Modules;/daq/software/products/larana/v09_15_09/Modules;/daq/software/products/larexamples/v09_09_08/Modules;/daq/software/products/larevt/v09_10_05/Modules;/daq/software/products/lardata/v09_16_05/Modules;/daq/software/products/canvas_root_io/v1_13_06/Modules;/daq/software/products/larcore/v09_11_02/Modules;/daq/software/products/nufinder/v1_02_01/Modules;/daq/software/products/nusimdata/v1_28_06/Modules;/daq/software/products/messagefacility/v2_10_05/Modules;/daq/software/products/art/v3_14_04/Modules;/daq/software/products/artg4tk/v12_00_03/Modules;/daq/software/products/larsim/v09_44_01/Modules;/daq/software/products/lareventdisplay/v09_11_09/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules;/daq/software/products/cetmodules/v3_24_01/Modules/compat;/daq/software/products/cetmodules/v3_24_01/Modules/compat-aux;/daq/software/products/mrb/v6_09_06/Modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/catch/v3_3_2/Linux64bit+3.10-2.17-e26/lib/cmake/Catch2;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/root/v6_28_12/Linux64bit+3.10-2.17-e26-p3915-prof/cmake/modules;/daq/software/products/triton/v2_25_0d/Linux64bit+3.10-2.17-e26/lib/cmake/TritonCommon;/daq/software/products/triton/v2_25_0d/Linux64bit+3.10-2.17-e26/lib/cmake/TritonClient"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/daq/software/products/cetmodules/v3_24_01/Modules/private/CetToolchainOverrides.cmake"
+    buildResult:
+      variable: "GIF_GifFileType_UserData"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y'
+        
+        Run Build Command(s): /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_edf22/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_edf22.dir/build.make CMakeFiles/cmTC_edf22.dir/build
+        gmake[1]: Entering directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y'
+        Building C object CMakeFiles/cmTC_edf22.dir/src.c.o
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc -DGIF_GifFileType_UserData   -o CMakeFiles/cmTC_edf22.dir/src.c.o -c /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y/src.c
+        Linking C executable cmTC_edf22
+        /daq/software/products/cmake/v3_27_4/Linux64bit+3.10-2.17/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edf22.dir/link.txt --verbose=1
+        /daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/gcc CMakeFiles/cmTC_edf22.dir/src.c.o -o cmTC_edf22 
+        gmake[1]: Leaving directory `/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/CMakeFiles/CMakeScratch/TryCompile-UDsp2y'
+        
+      exitCode: 0
+...

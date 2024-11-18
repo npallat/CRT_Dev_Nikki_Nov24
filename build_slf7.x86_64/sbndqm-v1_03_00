@@ -1,0 +1,143 @@
+# Add '-B' to UPS_OVERRIDE for safety.
+tnotnull UPS_OVERRIDE || setenv UPS_OVERRIDE ''
+expr "x $UPS_OVERRIDE" : '.* -[^- 	]*B' >/dev/null || setenv UPS_OVERRIDE "$UPS_OVERRIDE -B"
+
+####################################
+# Use-time dependencies.
+####################################
+# > sbncode <
+setup -B sbncode v09_91_02_01 -q e26:+prof; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ sbncode\ v09_91_02_01\ \-q\ e26\:\+prof\ failed && \
+  return 1 || true
+# > sbndaq_artdaq_core <
+setup -B sbndaq_artdaq_core v1_09_00of1 -q e26:+s131:+prof; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ sbndaq_artdaq_core\ v1_09_00of1\ \-q\ e26\:\+s131\:\+prof\ failed && \
+  return 1 || true
+# > artdaq <
+setup -B artdaq v3_13_02 -q e26:+s131:+prof; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ artdaq\ v3_13_02\ \-q\ e26\:\+s131\:\+prof\ failed && \
+  return 1 || true
+# > fftw <
+setup -B fftw v3_3_10; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ fftw\ v3_3_10\ failed && \
+  return 1 || true
+# > fhiclpy <
+setup -B fhiclpy v4_03_05 -q e26:+prof; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ fhiclpy\ v4_03_05\ \-q\ e26\:\+prof\ failed && \
+  return 1 || true
+
+##################
+tnotnull SETUP_CETMODULES && unsetup cetmodules
+tnotnull SETUP_CETBUILDTOOLS && unsetup -j cetbuildtools
+
+# Save and clear UPS_OVERRIDE to avoid trouble.
+tdefined UPS_OVERRIDE_SAFE && unsetenv_ UPS_OVERRIDE_SAFE
+tdefined UPS_OVERRIDE && setenv UPS_OVERRIDE_SAFE "$UPS_OVERRIDE"
+tdefined UPS_OVERRIDE && unsetenv_ UPS_OVERRIDE
+# > cetmodules <
+setup -B cetmodules v3_24_01; test "$?" != 0 && \
+  echo ERROR\:\ setup\ \-B\ cetmodules\ v3_24_01\ failed && \
+  return 1 || true
+
+# Restore any previous value for UPS_OVERRIDE.
+tdefined UPS_OVERRIDE_SAFE && setenv UPS_OVERRIDE "$UPS_OVERRIDE_SAFE"
+tdefined UPS_OVERRIDE_SAFE && unsetenv_ UPS_OVERRIDE_SAFE
+##################
+
+##################
+# >> sbndaq_online <<
+##################
+
+tdefined SETUP_SBNDAQ_ONLINE && unsetup -j sbndaq_online
+setenv SBNDAQ_ONLINE_VERSION "v1_01_00"
+setenv SBNDAQ_ONLINE_DIR "${MRB_SOURCE}/sbndaq_online"
+setenv CETPKG_BUILD "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/sbndaq_online"
+setenv CETPKG_SOURCE "$SBNDAQ_ONLINE_DIR"
+
+####################################
+# Development environment.
+####################################
+# LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH "`dropit -p \"${LD_LIBRARY_PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/lib\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ LD_LIBRARY_PATH && \
+  return 1 || true
+# CET_PLUGIN_PATH
+test -z "${CET_PLUGIN_PATH}" || \
+  setenv CET_PLUGIN_PATH "`dropit -p \"${CET_PLUGIN_PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/lib\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ CET_PLUGIN_PATH && \
+  return 1 || true
+# ROOT_INCLUDE_PATH
+setenv ROOT_INCLUDE_PATH "`dropit -p \"${ROOT_INCLUDE_PATH}\" -sfe \"${CETPKG_SOURCE}\" \"${CETPKG_BUILD}\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ ROOT_INCLUDE_PATH && \
+  return 1 || true
+# CMAKE_PREFIX_PATH
+setenv CMAKE_PREFIX_PATH "`dropit -p \"${CMAKE_PREFIX_PATH}\" -sfe \"${CETPKG_BUILD}\"`"
+# FHICL_FILE_PATH
+setenv FHICL_FILE_PATH "`dropit -p \"${FHICL_FILE_PATH}\" -sfe \"${CETPKG_BUILD}/fcl\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ FHICL_FILE_PATH && \
+  return 1 || true
+# FW_SEARCH_PATH
+setenv FW_SEARCH_PATH "`dropit -p \"${FW_SEARCH_PATH}\" -sfe \"${CETPKG_BUILD}/gdml\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ FW_SEARCH_PATH && \
+  return 1 || true
+# PATH
+setenv PATH "`dropit -p \"${PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/bin\" \"${CETPKG_SOURCE}/slf7.x86_64.e26.prof/bin\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ PATH && \
+  return 1 || true
+
+##################
+# >> sbndqm <<
+##################
+
+tdefined SETUP_SBNDQM && unsetup -j sbndqm
+setenv SBNDQM_VERSION "v1_03_00"
+setenv SBNDQM_DIR "${MRB_SOURCE}/sbndqm"
+setenv CETPKG_BUILD "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64/sbndqm"
+setenv CETPKG_SOURCE "$SBNDQM_DIR"
+
+####################################
+# Development environment.
+####################################
+# LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH "`dropit -p \"${LD_LIBRARY_PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/lib\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ LD_LIBRARY_PATH && \
+  return 1 || true
+# CET_PLUGIN_PATH
+test -z "${CET_PLUGIN_PATH}" || \
+  setenv CET_PLUGIN_PATH "`dropit -p \"${CET_PLUGIN_PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/lib\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ CET_PLUGIN_PATH && \
+  return 1 || true
+# ROOT_INCLUDE_PATH
+setenv ROOT_INCLUDE_PATH "`dropit -p \"${ROOT_INCLUDE_PATH}\" -sfe \"${CETPKG_SOURCE}\" \"${CETPKG_BUILD}\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ ROOT_INCLUDE_PATH && \
+  return 1 || true
+# CMAKE_PREFIX_PATH
+setenv CMAKE_PREFIX_PATH "`dropit -p \"${CMAKE_PREFIX_PATH}\" -sfe \"${CETPKG_BUILD}\"`"
+# FHICL_FILE_PATH
+setenv FHICL_FILE_PATH "`dropit -p \"${FHICL_FILE_PATH}\" -sfe \"${CETPKG_BUILD}/fcl\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ FHICL_FILE_PATH && \
+  return 1 || true
+# FW_SEARCH_PATH
+setenv FW_SEARCH_PATH "`dropit -p \"${FW_SEARCH_PATH}\" -sfe \"${CETPKG_BUILD}/gdml\" \"${CETPKG_BUILD}/scripts\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ FW_SEARCH_PATH && \
+  return 1 || true
+# PATH
+setenv PATH "`dropit -p \"${PATH}\" -sfe \"${CETPKG_BUILD}/slf7.x86_64.e26.prof/bin\" \"${CETPKG_SOURCE}/slf7.x86_64.e26.prof/bin\"`"; test "$?" != 0 && \
+  echo ERROR\:\ failure\ to\ prepend\ to\ PATH && \
+  return 1 || true
+
+########################################################################
+# Postamble
+
+# Required environment.
+setenv CETPKG_SOURCE "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/srcs"
+setenv CETPKG_BUILD  "/home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/build_slf7.x86_64"
+
+# Ensure top-level CMakeLists.txt is current.
+mrb uc >/dev/null; test "$?" != 0 && 
+  echo ERROR: failure to freshen /home/nfs/sbnddqm/DQM_DevAreas/CRT_DQM_NP_29Oct2024/srcs/CMakeLists.txt && 
+  return 1 || true
+
+# Ensure . is at the front of FHICL_FILE_PATH.
+tdefined FHICL_FILE_PATH || set_ FHICL_FILE_PATH=''
+setenv FHICL_FILE_PATH `dropit -esf -p "${FHICL_FILE_PATH}" '.'`

@@ -1,0 +1,1 @@
+setupRequired(artdaq v3_13_02 -q +e26:+s131:+prof)

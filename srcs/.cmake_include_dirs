@@ -1,0 +1,7 @@
+# DO NOT DELETE 
+# sbndaq_online package block
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/sbndaq_online)
+include_directories($ENV{MRB_BUILDDIR}/sbndaq_online)
+# sbndqm package block
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/sbndqm)
+include_directories($ENV{MRB_BUILDDIR}/sbndqm)

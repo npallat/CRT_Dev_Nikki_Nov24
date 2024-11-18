@@ -1,0 +1,1 @@
+/daq/software/products/gcc/v12_1_0/Linux64bit+3.10-2.17/bin/g++ -fPIC -g -O3 -fno-omit-frame-pointer -DNDEBUG -Wl,--unresolved-symbols=ignore-in-shared-libs -shared -Wl,-soname,libsbndqm_Decode_Mode.so -o ../../../slf7.x86_64.e26.prof/lib/libsbndqm_Decode_Mode.so CMakeFiles/sbndqm_Decode_Mode.dir/Mode.cc.o 

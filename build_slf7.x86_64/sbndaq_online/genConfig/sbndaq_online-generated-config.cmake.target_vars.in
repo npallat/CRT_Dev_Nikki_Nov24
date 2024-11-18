@@ -1,0 +1,14 @@
+####################################
+# Old cetbuildtools-style target variables.
+####################################
+if (${CETMODULES_CURRENT_PROJECT_NAME}_OLD_STYLE_CONFIG_VARS OR # Per-dependent setting.
+ cetbuildtools_UPS_VERSION OR # Backward-compatibility.
+ ${CETMODULES_CURRENT_PROJECT_NAME}_UPS_BUILD_ONLY_DEPENDENCIES
+ MATCHES "(^|\;)cetbuildtools(\;|$)")
+  set(SBNDAQ_ONLINE_HIREDIS sbndaq_online::hiredis)
+  set(SBNDAQ_ONLINE_REDIS_CONNECTION sbndaq_online::redis_connection)
+  set(SBNDAQ_ONLINE_SBNDAQ-ONLINE_REDIS-CONNECT_REDISCONNECTION_SERVICE sbndaq_online::sbndaq-online_redis-connect_RedisConnection_service)
+  set(SBNDAQ_ONLINE_SBNDAQ-ONLINE_REDIS-PLUGIN_REDIS_METRIC sbndaq_online::sbndaq-online_redis-plugin_redis_metric)
+  set(SBNDAQ_ONLINE_STORAGE sbndaq_online::storage)
+  set(SBNDAQ_ONLINE_SBNDAQ-ONLINE_HELPERS_INITMETRICMANAGER_SERVICE sbndaq_online::sbndaq-online_helpers_InitMetricManager_service)
+endif()
